@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9E6E6"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="#43448AFF"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter A Caption here!"
+        android:inputType="textMultiLine"
+
+        android:text="Example description, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Take Photo" />
+
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:background="#E6DFDF"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="184dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="92dp"
+        android:text="Post" />
+
+</LinearLayout>
