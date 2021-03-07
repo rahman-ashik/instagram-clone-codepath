@@ -27,6 +27,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+
+<img src='./prev1.gif' width=450 height=600> 
+<img src='./prev2.gif' width=450 height=600>
+<img src='./prev3.gif' width=450 height=600>
+
+
+
 <img src='https://imgur.com/PuG3DyV.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='https://imgur.com/egt3WnD.gif' title='Video Walkthrough2' width='' alt='Video Walkthrough2' />
 <img src='https://imgur.com/0OlOPVF.gif' title='Video Walkthrough3' width='' alt='Video Walkthrough3' />
