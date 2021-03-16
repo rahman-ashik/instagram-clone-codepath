@@ -29,18 +29,16 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
-
 
 Here's a walkthrough of implemented user stories:
 
-
-<img src='./prev4.gif' width=450 height=600> 
-<img src='./prev5.gif' width=450 height=600>
+<p align="center">
+<img src='./prev4.gif' width=400 height=600 > 
+<img src='./prev5.gif' width=400 height=600>
 
 <img src='https://imgur.com/mLJwHSO.gif' title='Video Walkthrough4' width='' alt='Video Walkthrough' />
 
-
+</p>
 
 
 
