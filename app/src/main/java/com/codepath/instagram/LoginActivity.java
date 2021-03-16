@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         if (currentUser != null) {
-            final Intent i = new Intent(LoginActivity.this, ProfileActivity.class);
+            final Intent i = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(i);
             finish();
         } else {
@@ -73,7 +73,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void viewHome() {
-        final Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
+        final Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
     }

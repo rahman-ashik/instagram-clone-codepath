@@ -1,7 +1,6 @@
 package com.codepath.instagram;
 
 import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -14,10 +13,10 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.codepath.instagram.model.Post;
-import com.parse.ParseUser;
-import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
-import java.io.Serializable;
+
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
 
     List<Post> posts;
@@ -45,11 +44,15 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder> {
         viewHolder.tvUsername.setText(post.getUser().getUsername());
         viewHolder.tvUser.setText(post.getUser().getUsername());
         viewHolder.tvDescription.setText(post.getDescription());
+
+
         Glide.with(context)
                 .load(post.getImage().getUrl())
                 .bitmapTransform(new RoundedCornersTransformation(context, 10, 0))
                 .into(viewHolder.ivImage);
 
+        String time= post.getUser().getCreatedAt().toString();
+        viewHolder.tvRelativeTimestamp.setText(post.getRelativeTime(time));
     }
 
     @Override

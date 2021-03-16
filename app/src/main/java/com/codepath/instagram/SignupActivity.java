@@ -1,7 +1,5 @@
 package com.codepath.instagram;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -41,15 +39,15 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ParseUser user = new ParseUser();
-                //Set properties
+
                 user.setUsername(etUsername.getText().toString());
                 user.setPassword(etPassword.getText().toString());
                 user.setEmail(etEmail.getText().toString());
 
-                // Set custom properties
+
                 user.put("phone", etPhone.getText().toString());
 
-                // start signUpInBackground
+
                 user.signUpInBackground(new SignUpCallback() {
                     public void done(ParseException e) {
                         if (e == null) {

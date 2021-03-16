@@ -16,8 +16,7 @@
         android:usesCleartextTraffic="true">
         <activity android:name=".EndlessRecyclerViewScrollListener"></activity>
         <activity android:name=".SignupActivity" />
-        <activity android:name=".PostActivity" />
-        <activity android:name=".ProfileActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
